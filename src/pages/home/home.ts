@@ -3,6 +3,8 @@ import { NavController } from 'ionic-angular';
 import { MovieService } from '../../services/rest/movie-service';
 import { MovieInfoPage } from '../movie-info/movie-info';
 import { IconsPage } from '../../pages/icons/icons';
+
+import { AboutPage } from '../../pages/about/about';
  
 @Component({
     selector: 'page-home',
@@ -10,11 +12,13 @@ import { IconsPage } from '../../pages/icons/icons';
 })
  
 export class HomePage {
- 
-    movies: Array<any>;
+	//Variables
+    movies: Array<any>; //Array of movie result
+	public name; //Init var on constreuct
+	aboutPage = AboutPage; //this.navCtrl.push(AboutPage);
  
     constructor(public navCtrl: NavController, private movieService: MovieService) {
- 
+		this.name = "Andrew";
     }
 	
 	goToIconsPage () {

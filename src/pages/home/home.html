@@ -1,9 +1,12 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="secondary">
     <ion-title>
       KD App Movie list
     </ion-title>
   </ion-navbar>
+  
+  
+  
 </ion-header>
 <!--
 <ion-content padding>
@@ -35,7 +38,25 @@
 
 -->
  
-<ion-content padding>
+<ion-content padding class="home">
+
+  
+ <ion-col col-12 col-md-6>
+       <button ion-button color="primary" [navPush]="aboutPage">Go To About</button>
+     </ion-col>
+
+  <ion-card>
+    <ion-card-header>
+      Card Header
+    </ion-card-header>
+    <ion-card-content>
+      Hello {{name}}
+    </ion-card-content>
+	
+	
+  </ion-card>
+  
+  
  <ion-col col-12 col-md-6>
        <button ion-button color="secondary" (click)="goToIconsPage()">Go to Icons Page</button>
      </ion-col>

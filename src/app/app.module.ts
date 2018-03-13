@@ -12,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { IconsPage } from '../pages/icons/icons';
+import { AboutPage } from '../pages/about/about';
 
 import { MovieInfoPage } from '../pages/movie-info/movie-info';
 import { MovieService } from '../services/rest/movie-service';
@@ -22,7 +23,8 @@ import { MovieService } from '../services/rest/movie-service';
     MyApp,
     HomePage,
     IconsPage,
-    MovieInfoPage
+    MovieInfoPage,
+	AboutPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { MovieService } from '../services/rest/movie-service';
     MyApp,
     HomePage,
     IconsPage,
-    MovieInfoPage
+    MovieInfoPage,
+	AboutPage
   ],
   providers: [
     StatusBar,
