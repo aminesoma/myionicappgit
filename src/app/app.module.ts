@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
+import { Camera } from '@ionic-native/camera';
+
 import { HttpClientModule } from '@angular/common/http'; 
 /*import { HttpModule } from '@angular/http';*/
 import { Http ,HttpModule} from '@angular/http';
@@ -16,6 +18,11 @@ import { AboutPage } from '../pages/about/about';
 
 import { MovieInfoPage } from '../pages/movie-info/movie-info';
 import { MovieService } from '../services/rest/movie-service';
+
+
+import { UsersPage } from '../pages/users/users';
+import { ReposPage } from '../pages/repos/repos';
+import { OrganisationsPage } from '../pages/organisations/organisations';
  
 
 @NgModule({
@@ -24,7 +31,10 @@ import { MovieService } from '../services/rest/movie-service';
     HomePage,
     IconsPage,
     MovieInfoPage,
-	AboutPage
+	AboutPage,
+    UsersPage,
+    ReposPage,
+    OrganisationsPage
   ],
   imports: [
     BrowserModule,
@@ -37,12 +47,16 @@ import { MovieService } from '../services/rest/movie-service';
     HomePage,
     IconsPage,
     MovieInfoPage,
-	AboutPage
+	AboutPage,
+    UsersPage,
+    ReposPage,
+    OrganisationsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     MovieService,
+	Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
   /*
