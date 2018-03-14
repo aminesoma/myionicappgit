@@ -52,14 +52,35 @@
  
 <ion-content padding class="home">
 
+
+
+
+
+  <ion-grid>
+    <ion-row text-center>
+      <ion-col>
+		I'm a column
+		<button ion-button color="danger" (click)="shareInfo()" > Share</button>
+	  </ion-col>
+	  
+      <ion-col>
+	     Another column
+		<button ion-button (click)="shareInfo()">
+		  <ion-icon name="share"></ion-icon>
+		</button>
+	  </ion-col>
+    </ion-row>
+  </ion-grid>
+  
   
  <ion-col col-12 col-md-6>
        <button ion-button color="primary" [navPush]="aboutPage">Go To About</button>
+	   
      </ion-col>
 
   <ion-card>
     <ion-card-header>
-      Card Header
+      Card Header  <button ion-button block (click)="openModal()">Open Modal</button>
     </ion-card-header>
     <ion-card-content>
       Hello {{name}}
@@ -79,10 +100,36 @@
 		  <img [src]="base64Image" *ngIf="base64Image" />
 		</ion-card-content>
 	</ion-card>
-  
-	
-	
   </ion-card>
+  
+  
+  
+  <ion-content>
+  <ion-slides autoplay="5000" loop="true" speed="500" pager="true" parallax="true" padding>
+
+    <ion-slide>
+      <img src="https://c1.sfdcstatic.com/content/dam/web/en_is/www/images/home/promos/resource-card-my-trailhead.jpg">
+      <h1>Welcome to my app!</h1>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="https://c1.sfdcstatic.com/content/dam/web/en_us/www/images/home/sfdc-chp-reco-meet-the-trailblazers.jpg">
+      <h1>All of the features</h1>
+      <p>Here's what you can do with the app...</p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="https://c1.sfdcstatic.com/content/dam/web/en_is/www/images/home/promos/nav-promo-marketing-cloud.jpg">
+      <h1>Get started now!</h1>
+      <button ion-button outline small (click)="navHome()">
+        Start using the app
+      </button>
+    </ion-slide>
+
+  </ion-slides>
+</ion-content>
+
+
   
   
  <ion-col col-12 col-md-6>
