@@ -6,7 +6,7 @@ import { Camera } from '@ionic-native/camera';
 //$ ionic cordova plugin add cordova-plugin-camera
 //$ npm install --save @ionic-native/camera
 
-import { FCM } from '@ionic-native/fcm';
+//import { FCM } from '@ionic-native/fcm';
 //$ ionic cordova plugin add cordova-plugin-fcm
 //$ npm install --save @ionic-native/fcm
 
@@ -18,6 +18,11 @@ import { HttpModule } from '@angular/http';
 import { SocialSharing } from '@ionic-native/social-sharing';
 //ionic plugin add cordova-plugin-x-socialsharing
 //npm install --save @ionic-native/social-sharing
+
+
+import { Push, PushObject, PushOptions } from '@ionic-native/push';
+//ionic plugin add phonegap-plugin-push --variable SENDER_ID=435346741968
+//npm install @ionic-native/push --save
 
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -68,7 +73,8 @@ import { OrganisationsPage } from '../pages/organisations/organisations';
     SplashScreen,
     MovieService,
 	Camera,
-	FCM,
+	Push,
+	//FCM,
 	SocialSharing,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
