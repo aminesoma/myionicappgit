@@ -23,6 +23,8 @@ import { MovieService } from '../../services/rest/movie-service';
 import { MovieInfoPage } from '../movie-info/movie-info';
 import { IconsPage } from '../../pages/icons/icons';
 import { AboutPage } from '../../pages/about/about';
+
+import { ListFilmPage } from '../list-film/list-film';
  
 @Component({
     selector: 'page-home',
@@ -131,6 +133,10 @@ export class HomePage {
 	
 	goToIconsPage () {
 		this.navCtrl.push(IconsPage);
+	}
+	
+	goToListFilmPage () {
+		this.navCtrl.push(ListFilmPage);
 	}
  
     searchMovieDB(event, key) {
