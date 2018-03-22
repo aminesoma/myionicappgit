@@ -31,6 +31,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { IconsPage } from '../pages/icons/icons';
 import { AboutPage } from '../pages/about/about';
+import { InfoUserPage } from '../pages/info-user/info-user';
 
 import { MovieInfoPage } from '../pages/movie-info/movie-info';
 
@@ -42,6 +43,11 @@ import { MovieService } from '../services/rest/movie-service';
 import { UsersPage } from '../pages/users/users';
 import { ReposPage } from '../pages/repos/repos';
 import { OrganisationsPage } from '../pages/organisations/organisations';
+
+//ionic cordova plugin add com.telerik.plugins.nativepagetransitions
+//npm install --save @ionic-native/native-page-transitions
+
+import { NativePageTransitions } from '@ionic-native/native-page-transitions';
  
 
 @NgModule({
@@ -54,7 +60,8 @@ import { OrganisationsPage } from '../pages/organisations/organisations';
     UsersPage,
     ReposPage,
     OrganisationsPage,
-	ListFilmPage
+	ListFilmPage,
+	InfoUserPage
   ],
   imports: [
     BrowserModule,
@@ -71,7 +78,8 @@ import { OrganisationsPage } from '../pages/organisations/organisations';
     UsersPage,
     ReposPage,
     OrganisationsPage,
-	ListFilmPage
+	ListFilmPage,
+	InfoUserPage
   ],
   providers: [
     StatusBar,
@@ -80,6 +88,7 @@ import { OrganisationsPage } from '../pages/organisations/organisations';
 	Camera,
 	Push,
 	//FCM,
+	NativePageTransitions,
 	SocialSharing,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
