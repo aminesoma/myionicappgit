@@ -49,11 +49,11 @@
 </ion-content>
 
 -->
- 
-<ion-content padding class="home">
+ <!--
+<ion-content padding class="home">-->
 
 
-
+<ion-content class="home card-background-page padding" >
 
 
   <ion-grid>
@@ -103,8 +103,6 @@
   </ion-card>
   
   
-  
-  <ion-content>
   <ion-slides autoplay="5000" loop="true" speed="500" pager="true" parallax="true" padding>
 
     <ion-slide>
@@ -127,7 +125,6 @@
     </ion-slide>
 
   </ion-slides>
-</ion-content>
 
 
   
@@ -157,7 +154,117 @@
             <h2>{{movie.original_title}}</h2>
             <p class="item-description">{{movie.overview}}</p>
         </ion-item>
-    </ion-list>   
+    </ion-list>  
+	
+	
+    
+        <div class="hero no-header flat">
+            <div class="content">
+                <div class="app-icon"></div>
+                <h1>Thronester</h1>
+            </div>
+        </div>
+        <div class="list">
+            <!--<ion-md-input placeholder="Username" highlight-color="balanced" type="text"></ion-md-input>
+            <ion-md-input placeholder="Password" highlight-color="energized" type="password"></ion-md-input>
+			-->
+	   </div>
+        <div class="padding">
+            <button ui-sref="app.profile" class="button button-full button-assertive ink">Login</button>
+        </div>
+        <div class="button-bar social-login">
+            <button class="button button-small button-border icon-left ion-social-google button-assertive-900">Google+</button>
+            <button class="button button-small button-border icon-left ion-social-twitter button-calm-900">Twitter</button>
+            <button class="button button-small button-border icon-left ion-social-facebook button-positive-900">Facebook</button>
+        </div>
+		
+		
+		
+		<!------------------->
+        <div class="item card-item">
+            <div ui-sref="app.gallery" class="card stable-bg ink ink-dark">
+                <div class="item item-avatar item-text-wrap">
+                    <span class="avatar" style="background-image: url('assets/imgs/jon-snow.jpg');"></span>
+                    <strong>Jon Snow</strong> knows nothing.
+                    <div class="card-footer text-right">
+                        <i class="icon ion-chatbubbles positive"></i> 6
+                        <i class="icon ion-heart assertive"></i> 23
+                        <div class="pull-left">
+                            <i class="icon ion-clock"></i> just now
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item card-item">
+            <div ui-sref="app.gallery" class="card stable-bg ink ink-dark">
+                <div class="item item-avatar item-text-wrap">
+                    <span class="avatar" style="background-image: url('assets/imgs/tyrion.jpg');"></span>
+                    <strong>Tyrion Lannister</strong> says "Perhaps that is the secret. It is not what we do, so much as why we do it."
+                    <div class="card-footer text-right">
+                        <i class="icon ion-chatbubble positive"></i> 2
+                        <i class="icon ion-heart assertive"></i> 4
+                        <div class="pull-left">
+                            <i class="icon ion-clock"></i> 12 mins ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item card-item">
+            <div ui-sref="app.gallery" class="card stable-bg ink ink-dark">
+                <div class="item item-avatar item-text-wrap">
+                    <span class="avatar" style="background-image: url('assets/imgs/sansa.jpg');"></span>
+                    <strong>Sansa Stark</strong> added a gallery <strong>Pretending to be Anna from Frozen</strong> ...
+                    <a class="image"><img src="assets/imgs/sansa-snowcastle.png">
+                    </a>
+                    <a class="image"><img src="assets/imgs/sansa-snowcastle2.jpg">
+                    </a>
+                    <a class="image"><img src="assets/imgs/sansa-snowcastle3.jpg">
+                    </a>
+                    <div class="card-footer text-right">
+                        <i class="icon ion-chatbubble positive"></i> 2
+                        <i class="icon ion-heart assertive"></i> 4
+                        <div class="pull-left">
+                            <i class="icon ion-clock"></i> 3 hrs ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		
+		
+		
+		
+  <ion-card>
+    <img src="assets/imgs/card-saopaolo.png"/>
+    <div class="card-title">São Paulo</div>
+    <div class="card-subtitle">41 Listings</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/card-amsterdam.png"/>
+    <div class="card-title">Amsterdam</div>
+    <div class="card-subtitle">64 Listings</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/card-sf.png"/>
+    <div class="card-title">San Francisco</div>
+    <div class="card-subtitle">72 Listings</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/card-madison.png"/>
+    <div class="card-title">Madison</div>
+    <div class="card-subtitle">28 Listings</div>
+  </ion-card>
+
+   
+
+
+	
 </ion-content>
 
 
